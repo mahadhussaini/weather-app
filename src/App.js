@@ -42,6 +42,12 @@ function App() {
       return "Clear";
     } else if (data.weather[0].main === "Smoke") {
       return "Smoke";
+    } else if (data.weather[0].main === "Snow") {
+      return "Snow";
+    } else if (data.weather[0].main === "Mist") {
+      return "Mist";
+    } else if (data.weather[0].main === "Thunderstorm") {
+      return "Thunderstorm";
     } else {
       return "Other";
     }
@@ -53,6 +59,9 @@ function App() {
     Clear: "#F7DC6F",
     Smoke: "#EFEFEF",
     Other: "#ffffff",
+    Snow: "#F0FFFF",
+    Mist: "#C0C0C0",
+    Thunderstorm: "#FF0000",
   };
 
   return (
